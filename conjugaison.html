@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="page.css">
+</head>
+<body class="body" >
+
+<div class="header" > <div  class="header-title" > BOURBIA ASMAE </div> 
+		<div class="header-menu" > 
+		<a href="index.html" >       Home </a> 
+		<a href="grammaire.html"  > grammaire </a> 
+		<a href="Ortho.html"  >      Orthographe</a> 
+		<a href="lexique.html"  >    Lexique </a> 
+		<a href="conjugaison.html"> Conjugaison </a> 
+
+		</div>
+</div>
+
+<div class="content" >
+	<div class="content-title" >  conjugaison </div>
+	<div class="exercise" >
+	<div class="exercise-qestion-title" > <strong>1- Veuillez choisir le temps correcte. </strong> </div>
+	<div class="exercise-qestion" > Nous mangeons de la choucroute. <select id="0"><option value="futur">futur</option>
+		                                                                            <option value="présent">présent</option>
+																				    <option value="imparfait">imparfait </option>
+																					<option value="passé composé">passé composé</option>
+		                                                            </select> </div>
+	<div class="exercise-qestion" > Elles ont dansé toute la nuit.<select id="1"><option value="futur">futur</option>
+		                                                                            <option value="présent">présent</option>
+																				    <option value="imparfait">imparfait </option>
+																					<option value="passé composé">passé composé</option>
+		                                                            </select> </div>
+    <div class="exercise-qestion" > Je peux aller toute seule à la plage.<select id="2"><option value="futur">futur</option>
+		                                                                            <option value="présent">présent</option>
+																				    <option value="imparfait">imparfait </option>
+																					<option value="passé composé">passé composé</option>
+		                                                            </select> </div>
+    <div class="exercise-qestion" > Je tiens ma sœur par la main.<select id="3"><option value="futur">futur</option>
+		                                                                            <option value="présent">présent</option>
+																				    <option value="imparfait">imparfait </option>
+																					<option value="passé composé">passé composé</option>
+		                                                            </select> </div>
+    <div class="exercise-qestion" > Elle voulait juste le voir mais il était parti.<select id="4"><option value="futur">futur</option>
+		                                                                            <option value="présent">présent</option>
+																				    <option value="imparfait">imparfait </option>
+																					<option value="passé composé">passé composé</option>
+		                                                            </select> </div>																	
+	</div>
+
+
+	<div class="exercise" >
+	<div class="exercise-qestion-title" > <strong>2-Conjuguer les verbes au temps requis. </strong> </div>
+	<div class="exercise-qestion" > De tous côtés, nous (arriver, présent)<input type="text" id="5" > les roulements du tonnerre.  </div>	
+	<div class="exercise-qestion" > Lequel de vous trois (avoir, passé composé)<input type="text" id="6" > la meilleure note ?   </div>	
+	<div class="exercise-qestion" > Ma sœur et moi (croire, plus-que-parfait)<input type="text" id="7" > longtemps au père Noël.    </div>	
+    <div class="exercise-qestion" > Mes frères et moi (faire, imparfait)<input type="text" id="8" > semblant d'être malades.  </div> 
+    <div class="exercise-qestion" > Quand (se couper, futur)<input type="text" id="9" > - tu tes ongles ?   </div> 
+	</div>
+	
+	
+	
+	
+	
+	<div class="verifier" > 	<button class="btn" onClick="vrai()" >Vérifier</button>   </div>
+ </div>
+</div>
+
+
+
+ <script type="text/javascript">
+ var T=['présent','passé composé','présent','présent','imparfait','arrivent','a eu','avions cru','faisions','te coupras'];
+ function vrai(){
+ for(i=0;i<=9;i++){  
+ var c=document.getElementById(i).value;
+ if (c==T[i]){
+ document.getElementById(i).style.backgroundColor = 'green';
+ }
+ else 
+ { document.getElementById(i).style.backgroundColor = 'red ';
+    document.getElementById(i).value=T[i];
+ }
+ }
+ }
+  </script>
+</body>
+</html>

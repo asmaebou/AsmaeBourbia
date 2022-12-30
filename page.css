@@ -1,0 +1,157 @@
+.body{
+	 background-image: url('1.jpg');
+     background-repeat: no-repeat ;
+     background-size: cover; /* Resize the background image to cover the entire container */
+	
+}
+
+.header{
+	width:100%;
+	display:flex;
+	height : 50px ;
+	justify-content: space-between;
+	background-color:rgba(100, 1,1,0.7);
+	font-size: 30px;
+	border-radius: 10px 100px / 120px;
+
+}
+
+.header-title{
+	margin-left:10px;
+	margin-top:5px;
+	color:white;
+	
+}
+
+.header-menu{
+	font-size:20px;
+	padding-top:20px;
+	margin-right:40px;
+	
+}
+
+
+.content{
+	display:block;
+	margin-top:15px;
+	width:90%;
+	height:550px;
+	border-radius:50px;
+	margin-left:5%;
+	background-color:rgba(255,255,255,0.95);
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	overflow-Y:scroll;
+	
+}
+
+.content-title{
+	width:100%;
+	text-align:center ;
+	font-size:40px;
+	padding-top:20px;
+	margin-bottom:20px;
+	text-decoration: underline overline maroon;
+}
+
+a {
+  color: white;
+  text-decoration: none; /* no underline */
+  margin-right:5px;
+
+}
+
+a:hover{
+	color:rgb(205,202,128) ;	
+	font-size:21px; 
+}
+
+.exercise{
+	padding-top:20px;
+	margin-left:100px;
+}
+
+.exercise-qestion-title{
+	font-size:24px;
+	margin-bottom:10px;
+}
+
+.exercise-qestion{
+	font-size:20px;
+	margin:5px 0px 5px 0px ;
+}
+
+.btn{
+	
+	width:100%;
+	font-size:18px ;
+	background-color:rgba(91,143,84,0.8) ;
+	height:40px ;
+	border-color : rgba(91,143,84,0.8) ;
+	border-radius:5px ;
+	margin-top : 15px ;
+	width : 200px ;
+	
+}
+
+
+.btn:hover{
+	
+	background-color:rgb(205,202,128) ;
+	border-color :rgb(205,202,128) ;
+}
+
+.verifier{
+	width:100%;
+	text-align:center;
+	margin-bottom:10px;
+
+}
+
+::-webkit-scrollbar {
+  width: 0.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+	background-color:rgb(205,202,128) ;
+  opacity:0.95;
+  color: black;
+  font-size:14px;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

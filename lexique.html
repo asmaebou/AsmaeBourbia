@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="page.css">
+</head>
+<body class="body" >
+
+<div class="header" > <div  class="header-title" > BOURBIA ASMAE </div> 
+		<div class="header-menu" > 
+		<a href="index.html" >       Home </a> 
+		<a href="grammaire.html"  > grammaire </a> 
+		<a href="Ortho.html"  >      Orthographe </a> 
+		<a href="lexique.html"  >    Lexique </a> 
+		<a href="conjugaison.html"> Conjugaison </a>
+
+		</div>
+</div>
+
+<div class="content" >
+	<div class="content-title" >  lexique </div>
+	<div class="exercise" >
+	<div class="exercise-qestion-title" > <strong>1- Quel est l’intrus ?</strong> </div>
+	<div class="exercise-qestion" > chaussure - chausson - chant - chaussette : l’intrus est <select id="0"> <option value="chaussure"> chaussure</option>
+		                                                                                              <option value="chausson"> chausson </option>
+																									  <option value="chant">chant </option>
+		                                                                                              <option value="chaussette ">chaussette  </option>
+		                                                                                     </select></div>	
+	<div class="exercise-qestion" > camping - camp - camper – compagnon : l’intrus est  <select id="1"> <option value="camping"> camping </option>
+		                                                                                         <option value="camp"> camp</option>
+																							     <option value="camper">camper </option>
+		                                                                                         <option value="compagnon">compagnon </option>
+		                                                                                 </select></div>	
+	<div class="exercise-qestion" >  servir - sertir - serviteur - service: l’intrus est  <select id="2"> <option value="servir"> servir </option>
+		                                                                                         <option value="sertir"> sertir</option>
+																							     <option value="serviteur">serviteur </option>
+		                                                                                         <option value="service">service </option>
+		                                                                                 </select></div>	
+	<div class="exercise-qestion" > ville - village - villageois - vieille: l’intrus est <select id="3"> <option value="ville"> ville </option>
+		                                                                                         <option value="village"> village</option>
+																							     <option value="villageois">villageois </option>
+		                                                                                         <option value="vieille">vieille </option>
+		                                                                                 </select> </div>	
+
+	</div>
+
+
+	<div class="exercise" >
+	<div class="exercise-qestion-title" > <strong>2- Classe ces sports par ordre alphabétique : football, handball, aviron, badminton, rafting. </strong> </div>
+	<div class="exercise-qestion" >  <select id="4"> <option value="football">  football </option>
+		                                      <option value="handball">handball</option>
+		               					      <option value="aviron">aviron </option>
+		                                      <option value="badminton">badminton</option>
+											  <option value="rafting">rafting</option>
+									</select> </div>
+    <div class="exercise-qestion" >  <select id="5"> <option value="football">  football </option>
+		                                      <option value="handball">handball</option>
+		               					      <option value="aviron">aviron </option>
+		                                      <option value="badminton">badminton</option>
+											  <option value="rafting">rafting</option>
+									</select> </div>
+    <div class="exercise-qestion" >  <select id="6"> <option value="football">  football </option>
+		                                      <option value="handball">handball</option>
+		               					      <option value="aviron">aviron </option>
+		                                      <option value="badminton">badminton</option>
+											  <option value="rafting">rafting</option>
+									</select> </div>
+    <div class="exercise-qestion" >  <select id="7"> <option value="football">  football </option>
+		                                      <option value="handball">handball</option>
+		               					      <option value="aviron">aviron </option>
+		                                      <option value="badminton">badminton</option>
+											  <option value="rafting">rafting</option>
+									</select> </div>
+	<div class="exercise-qestion" >  <select id="8"> <option value="football">  football </option>
+		                                      <option value="handball">handball</option>
+		               					      <option value="aviron">aviron </option>
+		                                      <option value="badminton">badminton</option>
+											  <option value="rafting">rafting</option>
+									</select> </div>
+</div>
+	
+	<div class="exercise" >
+	<div class="exercise-qestion-title" > <strong>3-  Associe les synonymes. </strong> </div>
+    <div class="exercise-qestion" > réfléchir - une faute - brave - bizarre - agréable   </div>	
+	<div class="exercise-qestion" >  courageux : <input type="text" id="9" >  </div>	
+	<div class="exercise-qestion" >  gentil : <input type="text" id="10" >  </div>	
+	<div class="exercise-qestion" >  une erreur : <input type="text" id="11" >  </div>	
+	<div class="exercise-qestion" >  étrange : <input type="text" id="12" >  </div>	
+	<div class="exercise-qestion" > penser :  <input type="text" id="13" >  </div>	
+
+	</div>
+
+	
+	<div class="verifier" > 	<button class="btn" onClick="vrai()" > Vérifier </button>   </div>
+ </div>
+</div>
+
+
+<script type="text/javascript">
+ var T=['chant','compagnon','sertir','vieille','aviron','badminton','football','handball','rafting','brave','agréable','une faute','bizarre','réfléchir'];
+ function vrai(){
+ for(i=0;i<=13;i++){  
+ var c=document.getElementById(i).value;
+ if (c==T[i]){
+ document.getElementById(i).style.backgroundColor = 'green';
+ }
+ else 
+ { document.getElementById(i).style.backgroundColor = 'red ';
+    document.getElementById(i).value=T[i];
+ }
+ }
+ }
+  </script>
+  
+  
+</body>
+</html>

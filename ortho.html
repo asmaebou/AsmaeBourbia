@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="page.css">
+</head>
+<body class="body" >
+
+<div class="header" > <div  class="header-title" > BOURBIA ASMAE </div> 
+		<div class="header-menu" > 
+		<a href="index.html" >       Home </a> 
+		<a href="grammaire.html"  > grammaire </a> 
+		<a href="Ortho.html"  >      Orthographe</a> 
+		<a href="lexique.html"  >    Lexique </a> 
+		<a href="conjugaison.html"> Conjugaison </a>
+
+		</div>
+</div>
+
+<div class="content" >
+	<div class="content-title" >Orthographe </div>
+	<div class="exercise" >
+	<div class="exercise-qestion-title" > <strong>1-Complète le texte avec les petits mots qui conviennent : un, une ou des </strong> </div>
+	<div class="exercise-qestion" > Dans ma ville, il y a    <input type="text" id="0">  magasins. </div>
+	<div class="exercise-qestion" > Mais dans ma rue, il y a <input type="text" id="1"> magasin </div>	
+    <div class="exercise-qestion" > Dans ce magasin, il y a  <input type="text" id="2"> étagère. </div>	
+	<div class="exercise-qestion" > Sur cette étagère, il y a <input type="text" id="3"> boîte.</div>	
+    <div class="exercise-qestion" > Dans cette boîte, il y a <input type="text" id="4">  livre. </div>	
+	<div class="exercise-qestion" > Dans cette livre, il y a <input type="text" id="5">  formule magique. </div>	
+	<div class="exercise-qestion" > Et ce secret… C‘est      <input type="text" id="6"> secret. </div>	
+	<div class="exercise-qestion" > Dans ce livre, il y a    <input type="text" id="7"> formule magique. </div>	
+    </div>
+
+<div class="exercise" >
+	<div class="exercise-qestion-title" > <strong>2- Complète les verbes par "e" ou "ent".</strong> </div>
+	<div class="exercise-qestion" >Les violonistes accord <select id="8"> <option value="e"> e </option>
+		                                                           <option value="ent"> ent </option>
+		                                                  </select>leurs instruments. </div>	
+	
+	<div class="exercise-qestion" > Le concert commenc  <select id="9"> <option value="e"> e </option>
+		                                                          <option value="ent"> ent </option>
+		                                                 </select>dans quelques instants.</div>	
+	
+	<div class="exercise-qestion" >  Le public chuchot  <select id="10"> <option value="e"> e </option>
+		                                                         <option value="ent"> ent </option>
+		                                                    </select>en attendant le début du spectacle.</div>	
+	
+	<div class="exercise-qestion" >  Les ouvreuses plac <select id="11"> <option value="e"> e </option>
+		                                                         <option value="ent"> ent </option>
+		                                                </select>les derniers arrivants. </div>	
+	</div>
+	
+	<div class="exercise" >
+	<div class="exercise-qestion-title" > <strong>3- Change l’adjectif pour dire le contraire.</strong> </div>
+	<div class="exercise-qestion" > un grand nid > un <input type="text" id="12" > nid.  </div>	
+	<div class="exercise-qestion" >  un sentier long > un sentier <input type="text" id="13" >  </div>	
+	<div class="exercise-qestion" > un beau rosier > un rosier <input type="text" id="14" >   </div>	
+    <div class="exercise-qestion" > un arbre bas > un arbre <input type="text" id="15" >  </div>	
+    </div>
+	
+	
+	
+	
+	
+	<div class="verifier" > 	<button class="btn" onClick="vrai()" > Vérifier </button>   </div>
+ </div>
+</div>
+
+
+<script type="text/javascript">
+ var T=['des','un','une','une','un','une','un','un','ent','e','e','ent','petit','court','laid','haut'];
+ function vrai(){
+ for(i=0;i<=15;i++){  
+ var c=document.getElementById(i).value;
+ if (c==T[i]){
+ document.getElementById(i).style.backgroundColor = 'green';
+ }
+ else 
+ { document.getElementById(i).style.backgroundColor = 'red ';
+    document.getElementById(i).value=T[i];
+ }
+ }
+ }
+  </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

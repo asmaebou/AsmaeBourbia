@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="page.css">
+  <style>
+  </style>
+</head>
+<body class="body" >
+
+<div class="header" > <div  class="header-title" > BOURBIA ASMAE </div> 
+		<div class="header-menu" > 
+		<a href="index.html" >       Home </a> 
+		<a href="grammaire.html"  > grammaire </a> 
+		<a href="Ortho.html"  >      Orthographe</a> 
+		<a href="lexique.html"  >    Lexique </a> 
+		<a href="conjugaison.html"> Conjugaison </a> 
+
+		</div>
+</div>
+
+<div class="content" >
+	<div class="content-title" >  Grammaire </div>
+	 <div class="exercise" >
+	<div class="exercise-qestion-title" > <strong>1- écrire en face à chaque phrase si la phrase affirmative ou négative : </strong> </div>
+	<div class="exercise-qestion" > J’arriverai à l’heure.  <input type="text" id="0" > </div>	
+	<div class="exercise-qestion" > Je déteste les épinards.  <input type="text" id="1" > </div>	
+	<div class="exercise-qestion" > Zoé ne veut pas venir avec nous.  <input type="text" id="2" > </div>	
+	<div class="exercise-qestion" > Valentin se déguise en chevalier.  <input type="text" id="3" > </div>	
+	<div class="exercise-qestion" > Les enfants ne font pas de gâteau au chocolat. <input type="text" id="4" > </div>	
+
+	 </div>
+
+
+	<div class="exercise" >
+	<div class="exercise-qestion-title" > <strong>2-Remplissez les cases par 
+
+	<div class="tooltip"> COD
+	<span class="tooltiptext"> Le complément d'objet direct</span>
+	</div>
+
+	ou 
+
+	<div class="tooltip"> COI.
+	<span class="tooltiptext">Le complément d'objet indirect</span>
+	</div>
+	
+	</strong> </div>
+	<div class="exercise-qestion" > Je demande à ces enfants de faire moins de bruit. <input type="text" id="5" >  </div>	
+	<div class="exercise-qestion" > Le professeur propose une évaluation à Benjamin. <input type="text" id="6" >  </div>	
+	<div class="exercise-qestion" > J'ai oublié mon livre d'anglais en classe. <input type="text" id="7" >  </div>	
+	<div class="exercise-qestion" > Cet athlète pense aux prochains jeux olympiques. <input type="text" id="8" >  </div>	
+	<div class="exercise-qestion" > Il a créé une association pour aider les enfants malades. <input type="text" id="9" >  </div>	
+	</div>
+	
+	<div class="exercise" >
+	<div class="exercise-qestion-title" > <strong>3- Dans les phrases suivantes, mets la ponctuation qui convient (. ou ! ou ?). </strong> </div>
+		<div class="exercise-qestion" >  Le Nautilus, abîmé, remonte du fond des mers  <select id="10"><option value="."> . </option>
+		                                                                                        <option value="?">  ? </option>
+																								<option value="!"> ! </option>
+		                                                                                </select>
+    
+																						</div>
+        <div class="exercise-qestion" > A-t-il confiance en son navire  <select id="11"><option value="."> . </option>
+		                                                                                        <option value="?">  ? </option>
+																								<option value="!"> ! </option>
+		                                                                                </select> </div>
+		<div class="exercise-qestion" > Quel homme courageux  <select id="12"><option value="."> . </option>
+		                                                                       <option value="?">  ? </option>
+														                       <option value="!"> ! </option>
+		                                                      </select> </div>
+        <div class="exercise-qestion" > Le capitaine Némo n’est pas inquiet <select id="13"> <option value="." > . </option>
+		                                                                                     <option value="?" >  ? </option>
+																					         <option value="!" > ! </option>
+		                                                                    </select> </div>																						
+    </div>
+	
+	<div class="verifier" > 	<button class="btn" onClick="vrai()" > Vérifier </button>   </div>
+ </div>
+ 
+ <script type="text/javascript">
+ var T=['affirmative','affirmative','négative','affirmative','négative','COI','COD','COD','COI','COD',".","?","!","."];
+ function vrai(){
+ for(i=0;i<=13;i++){  
+ var c=document.getElementById(i).value;
+ if (c==T[i]){
+ document.getElementById(i).style.backgroundColor = 'green';
+ }
+ else 
+ { document.getElementById(i).style.backgroundColor = 'red ';
+    document.getElementById(i).value=T[i];
+ }
+ }
+ }
+  </script>
+
+</body>
+</html>
